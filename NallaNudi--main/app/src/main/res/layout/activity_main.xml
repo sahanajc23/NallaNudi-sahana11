@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F0"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ನಲ್ಲ ನುಡಿ"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#1a1408"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technical Terms in Kannada"
+            android:textSize="14sp"
+            android:textColor="#7a6f5e"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Word of the Day label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✨ WORD OF THE DAY"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="#d97706"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Word of the Day Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardWordOfDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#d97706">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvEnglishWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/tvKannadaWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="18sp"
+                    android:textColor="#fff3e0"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/tvExample"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:textColor="#ffe0b2"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Search Button -->
+        <Button
+            android:id="@+id/btnGoToSearch"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🔍  Search Technical Terms"
+            android:textSize="16sp"
+            android:backgroundTint="#0d9488"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- My List Button -->
+        <Button
+            android:id="@+id/btnGoToMyList"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="📚  My List"
+            android:textSize="16sp"
+            android:backgroundTint="#7c3aed"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+</ScrollView>

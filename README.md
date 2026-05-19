@@ -1,3 +1,4 @@
+Nalla-Nudi - Android Dictionary App
 An offline Android dictionary app that helps Kannada-medium students learn technical English vocabulary with Kannada explanations and voice pronunciation.
 
 Features
